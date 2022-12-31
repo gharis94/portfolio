@@ -11,7 +11,6 @@ const useMediaQuery=(query)=>{
             setMatches(media.matches)
         }
         const listner = () => {
-
             setMatches(media.matches)
         }
         window.addEventListener('resize',listner)

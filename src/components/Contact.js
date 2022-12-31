@@ -12,7 +12,7 @@ const Contact = () => {
     }
   }
     return (
-    <section id='contact' className='md:flex'>
+    <section id='contact' className='md:flex md:mt-20'>
         <motion.div
             className = 'md:pt-24  md:basis-1/2'
             initial='hidden'
@@ -30,38 +30,41 @@ const Contact = () => {
                 <Breaker />
             </div>
             
-            <div className='md:mt-28'>
-                <form target='_blank' 
+            <div className='md:mt-28 flex flex-col '>
+                <form 
+                className='flex flex-col items-center'
+                target='_blank' 
                 action ="https://formsubmit.co/your@email.com"
                 method = "POST"
                 onSubmit={(e)=>handleSubmit(e)}>
                     <input
-                        className='w-9/12 bg-blue placeholder-white pl-2 m-2 rounded-md'
+                        className='md:w-9/12 w-full bg-blue placeholder-white pl-2 my-2 rounded-md'
                         type='text'
                         placeholder='Enter the Name'
                         {...register('name',{required:true})}
                     />
                     {errors.name && <span>The field is required</span>}
                     <input
-                        className='w-9/12 bg-blue placeholder-white pl-2 m-2 rounded-md'
+                        className='md:w-9/12 w-full bg-blue placeholder-white pl-2 my-2 rounded-md'
                         type='email'
                         placeholder='Enter the email'
                         {...register('email',{required:true,pattern:/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/})}
                     />
                     <textarea
-                        className='w-9/12 bg-blue pl-2 placeholder-white m-2 rounded-md'
+                        className='md:w-9/12 w-full bg-blue pl-2 placeholder-white my-2 rounded-md'
                         cols='50'
                         rows='3'
                         placeholder='Enter Message...'
                     />
                     
                 </form>
-                <button className='bg-yellow pt-1 pb-1 pl-4 pr-4 mt-5 ml-2 hover:bg-red rounded-md'>Send</button>
+                
+                <button className='bg-yellow md:ml-20 md:w-8/12 pt-1 pb-1 pl-4 pr-4 mt-5 ml-2 hover:bg-red rounded-md'>Send</button>
             </div>
         
         </motion.div>
         <motion.div
-            className = 'md:mt-24 md:basis-1/2'
+            className = 'mt-24 md:basis-1/2'
             initial='hidden'
             whileInView='visible'
             viewport={{once:true,amount:0.5}}

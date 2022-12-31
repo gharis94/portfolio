@@ -40,7 +40,7 @@ const NavBar = ({selected,setSelected,isTopOfPage}) => {
                 </div>
             ):(
                 
-                    <div>
+                    <div >
                         <IconButton  onClick = {() => setIsMenuToggled(!isMenuToggled)} 
                         sx ={{backgroundColor: '#EF5350',color: "white",border: 'none'}}>
                             <MenuOutlinedIcon/>

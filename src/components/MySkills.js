@@ -8,9 +8,9 @@ const MySkills = () => {
   
     return (
         <section id='skills'>
-            <div className='mt-10 md:flex '>
+            <div className='mt-5 md:flex '>
                 <motion.div
-                    className='md:max-w-sm'
+                    className = 'md:max-w-sm md:pt-10 flex flex-col justify-center'
                     initial='hidden'
                     whileInView='visible'
                     viewport={{once:true,amount:0.5}}
@@ -20,8 +20,11 @@ const MySkills = () => {
                         visible:{opacity:1, x:0}
                     }}    
                 >
-                    <p className='font-playfair text-5xl pl-5 mt-20'>My <span className='text-red'>Skills</span></p>
-                    <Breaker width="w-1/3 md:w-3/12"/>
+                    <p className='font-playfair flex justify-center text-5xl  mt-20'>My <span className='xs:text-red'>Skills</span></p>
+                    <div  className = 'w-2/3 flex justify-center' >
+                        <Breaker width='w-full'/>
+                    </div>
+                    
                     <motion.div
                     initial='hidden'
                     whileInView='visible'
@@ -32,10 +35,10 @@ const MySkills = () => {
                         visible:{opacity:1, x:0}
                     }}
                 >
-                    <p className='md:ml-20'>df;jkbsdvfkvjdsbnlvj ailkjdfvkadzfnvalkjv aoilkjrmvdsnccjaklsdc ajksldcadsnvjkazfvnojzkvfoi;wkjasdvnjkdsmvco;ikljdsacm;sadlkcsdcois</p>
+                    <p className='md:mx-20 '>df;jkbsdvfkvjdsbnlvj ailkjdfvkadzfnvalkjv aoilkjrmvdsnccjaklsdc ajksldcadsnvjkazfvnojzkvfoi;wkjasdvnjkdsmvco;ikljdsacm;sadlkcsdcois</p>
                 </motion.div>
                 </motion.div>
-                <div className='md:ml-52 md:mt-20'>
+                <div className='md:ml-52 md:mt-20 md:pt-20 flex justify-center'>
                     <img className=' hover:cursor-pointer hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[200px] md:max-w-[150px]' src='https://raw.githubusercontent.com/ed-roh/react-portfolio/master/public/assets/profile-image.png'/>
                 </div>
             

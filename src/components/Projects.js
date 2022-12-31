@@ -33,8 +33,8 @@ const Project =({title,imageUrl})=>{
 
 const Projects = () => {
   return (
-    <section id='projects' className='pt-24 pd-48'>
-        <div className = 'mx-auto md:w-6/12' >
+    <section id='projects' className='pt-18 pd-48'>
+        <div className = 'md:mx-auto md:w-6/12' >
             <div className='flex  justify-center pt-32'>
                 <p className='font-playfair text-5xl'>Pro<span  className='text-red'>jects</span></p>
             </div>

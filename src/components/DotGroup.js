@@ -5,22 +5,22 @@ const DotGroup = ({selected,setSelected}) => {
   return (
     <div className='fixed right-7 top-[45%] flex flex-col gap-2  ' >
         <AnchorLink 
-            className={`${selected==='home'?'bg-yellow-400':'bg-grey'} h-3 w-3 rounded-full`}
+            className={`${selected==='home'?'bg-yellow':'bg-grey'} h-3 w-3 rounded-full`}
             onClick={()=>setSelected('home')}
             href='#home'
         />
         <AnchorLink 
-            className={`${selected==='skills'?'bg-yellow-400':'bg-slate-400'} h-3 w-3 rounded-full`}
+            className={`${selected==='skills'?'bg-yellow':'bg-slate-400'} h-3 w-3 rounded-full`}
             onClick={()=>setSelected('skills')}
             href='#skills'
         />
         <AnchorLink 
-            className={`${selected==='projects'?'bg-yellow-400':'bg-slate-400'} h-3 w-3 rounded-full`}
+            className={`${selected==='projects'?'bg-yellow':'bg-slate-400'} h-3 w-3 rounded-full`}
             onClick={()=>setSelected('projects')}
             href='#projects'
         />
         <AnchorLink 
-            className={`${selected==='contact'?'bg-yellow-400':'bg-slate-400'} h-3 w-3 rounded-full`}
+            className={`${selected==='contact'?'bg-yellow':'bg-slate-400'} h-3 w-3 rounded-full`}
             onClick={()=>setSelected('contact')}
             href='#contact'
         />
