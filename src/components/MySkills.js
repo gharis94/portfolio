@@ -8,9 +8,9 @@ const MySkills = () => {
   
     return (
         <section id='skills'>
-            <div className='mt-5 md:flex '>
+            <div className='mt-1 md:flex '>
                 <motion.div
-                    className = 'md:max-w-sm md:pt-10 flex flex-col justify-center'
+                    className = 'md:max-w-sm md:basis-1/2 md:pt-10 flex flex-col justify-center'
                     initial='hidden'
                     whileInView='visible'
                     viewport={{once:true,amount:0.5}}
@@ -35,11 +35,18 @@ const MySkills = () => {
                         visible:{opacity:1, x:0}
                     }}
                 >
-                    <p className='md:mx-20 '>df;jkbsdvfkvjdsbnlvj ailkjdfvkadzfnvalkjv aoilkjrmvdsnccjaklsdc ajksldcadsnvjkazfvnojzkvfoi;wkjasdvnjkdsmvco;ikljdsacm;sadlkcsdcois</p>
+                    <ul className='md:ml-28 '>
+                        <li>JavaScript</li>
+                        <li>React JS</li>
+                        <li>Tailwind CSS</li>
+                        <li>Git</li>
+                        <li>Redux</li>
+                        
+                    </ul>
                 </motion.div>
                 </motion.div>
-                <div className='md:ml-52 md:mt-20 md:pt-20 flex justify-center'>
-                    <img className=' hover:cursor-pointer hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[200px] md:max-w-[150px]' src='https://raw.githubusercontent.com/ed-roh/react-portfolio/master/public/assets/profile-image.png'/>
+                <div className='md:ml-52 md:basis-1/2 md:mt-20 md:pt-20 flex justify-center'>
+                    <img className=' hover:cursor-pointer hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[200px] md:max-w-[350px]' src='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/clipart3323238.png?alt=media&token=3dcd6189-dec7-4777-933d-17e66206febc'/>
                 </div>
             
             </div>
@@ -93,7 +100,7 @@ const MySkills = () => {
                     <div className='relative h-32'>
                         <div className='z-10'>
                             <p className='font-playfair font-semibold text-5xl'>03</p>
-                            <p className='font-playfair font-semibold text-3xl mt-2xl'>Future</p>
+                            <p className='font-playfair font-semibold text-3xl mt-2xl'>Problem Solver</p>
                         </div>
                         <div className='h-32 w-1/2 md:w-3/4 bg-red absolute right-0 top-0 z-[-1]'/>
                     </div>

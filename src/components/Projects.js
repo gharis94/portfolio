@@ -13,19 +13,22 @@ const projectVariant ={
     visible:{opacity:1,scale:1}
 }
 
-const Project =({title,imageUrl})=>{
+const Project =({title,imageUrl,link})=>{
     return(
         <motion.div 
         variants={projectVariant}
-        className=' relative max-h-[400px] max-w-[400px]'
+        className=' relative h-[200px] w-[300px]'
         >
-            <div className='absolute hover:cursor-pointer opacity-0 h-full w-full hover:opacity-90 transition duration-500 flex flex-col items-center justify-center text-center p-16 z-10 bg-deep-blue'>
+            <div className='absolute inset-0 hover:cursor-pointer opacity-0 h-full w-full hover:opacity-90 transition duration-500 flex flex-col items-center justify-center text-center p-16 z-10 bg-deep-blue'>
                 <p className='font-playfair font-semibold text-2xl'>
                     {title}
                 </p>
-                <p className='font-playfair mt-7'>kjdslhfa;dsohnjasdf;joidn.msadvckslmvcsmxzvc</p>
+                <a href={link} className='font-playfair mt-7'>View App</a>
             </div>
-            <img src={imageUrl}/>
+            <div className=''>
+                <img className='w-[300px] h-[200px] object-cover' src={imageUrl}/>
+            </div>
+            
         </motion.div>
 
     )
@@ -39,7 +42,7 @@ const Projects = () => {
                 <p className='font-playfair text-5xl'>Pro<span  className='text-red'>jects</span></p>
             </div>
             <Breaker width="w-1/3" />
-            <p className='text-center pt-10 pb-10'>lkbfliarewbcaesnfdukcaoire;ncaoinvcoaei;dnfvenaoi;dvaoe;idjfvkfdvn afd</p>
+            <p className='text-center pt-10 pb-10'>Following are some personal projects. For more projects, visit GITHUB</p>
         </div>
         <div className='md:w-4/5 md:mx-auto'>
             <motion.div
@@ -49,13 +52,22 @@ const Projects = () => {
                 viewport={{once:true,amount:0.2}}
                 variants={container}
             >
-                <Project title='Messaging App' imageUrl='https://github.com/ed-roh/react-portfolio/blob/master/public/assets/project-1.jpeg?raw=true'/>
-                <Project title='Social Media' imageUrl='https://github.com/ed-roh/react-portfolio/blob/master/public/assets/project-2.jpeg?raw=true'/>
-                <Project title='Social Media' imageUrl='https://github.com/ed-roh/react-portfolio/blob/master/public/assets/project-3.jpeg?raw=true'/>
-                <Project title='Social Media' imageUrl='https://github.com/ed-roh/react-portfolio/blob/master/public/assets/project-4.jpeg?raw=true'/>
-                <Project title='Social Media' imageUrl='https://github.com/ed-roh/react-portfolio/blob/master/public/assets/project-5.jpeg?raw=true'/>
-                <Project title='Social Media' imageUrl='https://github.com/ed-roh/react-portfolio/blob/master/public/assets/project-6.jpeg?raw=true'/>
-                <Project title='Social Media' imageUrl='https://github.com/ed-roh/react-portfolio/blob/master/public/assets/project-7.jpeg?raw=true'/>
+                <Project title='E-commerce App' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/ecommerce-3.JPG?alt=media&token=833640a2-ddb0-4e5f-b274-e19c7dc4a629'
+                    link = 'https://6353e83d0ae320139b766737--phenomenal-bunny-c51071.netlify.app/'
+                />
+                <Project title='Quiz App' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/quiz-1.JPG?alt=media&token=f53fa9c6-7629-471c-93eb-92b3f875f3e2'
+                    link = 'https://gentle-valkyrie-331976.netlify.app/'
+                />
+                <Project title='Restaurent ERP' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/2.JPG?alt=media&token=e77c5915-5ac0-408f-aec7-abc0d9cde83e'
+                    link = 'https://classy-buttercream-e11ba7.netlify.app/'
+                />
+                <Project title='Expense Tracker App' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/3.JPG?alt=media&token=125550c2-1f14-4910-9227-55587dcee0a6'
+                    link = 'https://expense-tracker-final.surge.sh/'
+                />
+                <Project title='Netflix Clone' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/344.JPG?alt=media&token=ce8c049a-1b2b-40ba-bad0-78362e0b274c'
+                    link = 'https://6388d7d9d11ed50bd3854f5d--exquisite-jelly-3f1c1f.netlify.app/'
+                />
+                
             </motion.div>
         </div>
             
