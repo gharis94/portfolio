@@ -5,9 +5,9 @@ import {useForm} from 'react-hook-form';
 
 const Contact = () => {
   const{trigger,register,formState:{errors}} =useForm();
-  const handleSubmit=(e)=>{
-    const isValid = trigger();
-    if(isValid){
+  const handleSubmit=async(e)=>{
+    const isValid =await trigger();
+    if(!isValid){
         e.preventDefault();
     }
   }
@@ -34,7 +34,7 @@ const Contact = () => {
                 <form 
                 className='flex flex-col items-center'
                 target='_blank' 
-                action ="https://formsubmit.co/your@email.com"
+                action = "https://formsubmit.co/334a82109713ce49785ff27141cb53fc"
                 method = "POST"
                 onSubmit={(e)=>handleSubmit(e)}>
                     <input
@@ -55,11 +55,17 @@ const Contact = () => {
                         cols='50'
                         rows='3'
                         placeholder='Enter Message...'
+                        {...register("message", {
+                            required: true,
+                            maxLength: 2000,
+                            })
+                        }
                     />
-                    
+                    <button type='submit' className='bg-yellow md:w-8/12 pt-1 pb-1 pl-4 pr-4 mt-5 ml-2 hover:bg-red rounded-md'>Send</button>
+
                 </form>
                 
-                <button className='bg-yellow md:ml-20 md:w-8/12 pt-1 pb-1 pl-4 pr-4 mt-5 ml-2 hover:bg-red rounded-md'>Send</button>
+                
             </div>
         
         </motion.div>
