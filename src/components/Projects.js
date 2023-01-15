@@ -52,6 +52,9 @@ const Projects = () => {
                 viewport={{once:true,amount:0.2}}
                 variants={container}
             >
+                <Project title='Amazon Clone' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/amazon-clone.JPG?alt=media&token=e5c6a98d-7127-4cf1-9775-b3d9b32d994f'
+                    link = 'https://genuine-pudding-90faa2.netlify.app/'
+                />
                 <Project title='E-commerce App' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/ecommerce-3.JPG?alt=media&token=833640a2-ddb0-4e5f-b274-e19c7dc4a629'
                     link = 'https://6353e83d0ae320139b766737--phenomenal-bunny-c51071.netlify.app/'
                 />
