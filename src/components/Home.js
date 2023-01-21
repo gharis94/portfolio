@@ -9,16 +9,16 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 const Home = ({setSelected}) => {
 
     return (
-    <section id='home' className='md:flex  md:justify-between md:items-center md:h-full gap-10 py-10'>
+    <section id='home' className='sm:flex  sm:justify-between sm:items-center sm:h-full gap-10 py-10'>
 
-        <div className='md:order-2 flex justify-center basis-
-        3/5'>
+        <div className='hidden sm:flex sm:order-2  justify-center  basis-
+        2/5'>
             
            <img className = ' hover:cursor-pointer hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[400px]'
             src = 'https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/bit-removebg-preview.png?alt=media&token=f32a71ee-3c17-420d-a4b5-ff25d9f37fca' / >
              
         </div>
-        <div  className='z-30 basis-2/5 md:ml-20 mt-20 md:mt-32'>
+        <div  className='z-30 sm:basis-3/5 md:ml-20 mt-20 md:mt-32'>
             <motion.div
             initial='hidden'
             whileInView='visible'
@@ -29,7 +29,7 @@ const Home = ({setSelected}) => {
                 visible:{opacity:1, x:0}
             }}
             >
-                <p className='text-6xl font-playfair z-10 text-center md:text-start'>
+                <p className='text-6xl  font-playfair z-100 text-center sm:text-start'>
                     Gharis {' '}
                     <span className='xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[40px] before:-top-[120px] before:z-[-1]'>Qasim</span>
                 </p>
@@ -58,7 +58,7 @@ const Home = ({setSelected}) => {
                 </AnchorLink>
             </motion.div>
             <motion.div
-                className='mt-5'
+                className='mt-5 text-center md:text-left'
                 initial='hidden'
                 whileInView='visible'
                 viewport={{once:true,amount:0.5}}

@@ -37,8 +37,8 @@ function App() {
       }
         <Home setSelected={setSelected}/> 
       </div>
-      <Breaker className='md:mb-20'/>
-      <div className='w-fit md:w-5/6 sm:mt-20 md:mx-auto md:h-full md:mt-100'>
+      <Breaker className='hidden sm:flex my-5 md:mb-20'/>
+      <div className='w-full  md:w-5/6 sm:mt-20 md:mx-auto md:h-full md:mt-100'>
         <MySkills/>
       </div>
       <Breaker className='md:mb-10'/>

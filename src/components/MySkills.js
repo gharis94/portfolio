@@ -7,10 +7,10 @@ const MySkills = () => {
     const isAboveSmallScreen= useMediaQuery('min-width:1060px')
   
     return (
-        <section id='skills'>
-            <div className='mt-1 md:flex '>
+        <section id='skills' className=' '>
+            <div className='mt-1 flex flex-col sm:flex-row '>
                 <motion.div
-                    className = 'md:max-w-sm md:basis-1/2 md:pt-10 flex flex-col justify-center'
+                    className = 'md:max-w-sm sm:basis-1/2 sm:pt-10 flex flex-col justify-center items-center '
                     initial='hidden'
                     whileInView='visible'
                     viewport={{once:true,amount:0.5}}
@@ -20,7 +20,7 @@ const MySkills = () => {
                         visible:{opacity:1, x:0}
                     }}    
                 >
-                    <p className='font-playfair flex justify-center text-5xl  mt-20'>My <span className='xs:text-red'>Skills</span></p>
+                    <p className='font-playfair flex justify-center text-5xl  mt-20 sm:mt-2'>My <span className='text-red'>Skills</span></p>
                     <div  className = 'w-2/3 flex justify-center' >
                         <Breaker width='w-full'/>
                     </div>
@@ -41,11 +41,13 @@ const MySkills = () => {
                         <li>Tailwind CSS</li>
                         <li>Git</li>
                         <li>Redux</li>
+                        <li>REST API </li>
+                        <li>Nivo Charts </li>
                         
                     </ul>
                 </motion.div>
                 </motion.div>
-                <div className='md:ml-52 md:basis-1/2 md:mt-20 md:pt-20 flex justify-center'>
+                <div className='md:ml-52 sm:basis-1/2 my-10 md:pt-20 flex justify-center'>
                     <img className=' hover:cursor-pointer hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[200px] md:max-w-[350px]' src='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/clipart3323238.png?alt=media&token=3dcd6189-dec7-4777-933d-17e66206febc'/>
                 </div>
             
