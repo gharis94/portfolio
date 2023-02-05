@@ -35,7 +35,7 @@ const MySkills = () => {
                         visible:{opacity:1, x:0}
                     }}
                 >
-                    <ul className='md:ml-28 '>
+                    <ul className='md:ml-28  space-y-2'>
                         <li>JavaScript</li>
                         <li>React JS</li>
                         <li>Tailwind CSS</li>
@@ -43,6 +43,7 @@ const MySkills = () => {
                         <li>Redux</li>
                         <li>REST API </li>
                         <li>Nivo Charts </li>
+                        <li>Figma </li>
                         
                     </ul>
                 </motion.div>

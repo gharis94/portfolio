@@ -46,7 +46,7 @@ const Projects = () => {
         </div>
         <div className='md:w-4/5 md:mx-auto'>
             <motion.div
-                className='sm:grid sm:grid-cols-3  flex justify-center flex-wrap'
+                className = 'flex flex-col sm:flex-row justify-center items-center flex-wrap sm:space-x-4 space-y-4 sm:space-y-0'
                 initial='hidden'
                 whileInView='visible'
                 viewport={{once:true,amount:0.2}}
@@ -55,28 +55,20 @@ const Projects = () => {
                 <Project title='Amazon Clone' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/amazon-clone.JPG?alt=media&token=e5c6a98d-7127-4cf1-9775-b3d9b32d994f'
                     link = 'https://genuine-pudding-90faa2.netlify.app/'
                 />
-                <Project title='E-commerce App' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/ecommerce-3.JPG?alt=media&token=833640a2-ddb0-4e5f-b274-e19c7dc4a629'
-                    link = 'https://6353e83d0ae320139b766737--phenomenal-bunny-c51071.netlify.app/'
-                />
-                <Project title='Quiz App' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/quiz-1.JPG?alt=media&token=f53fa9c6-7629-471c-93eb-92b3f875f3e2'
+                
+                {/* <Project title='Quiz App' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/quiz-1.JPG?alt=media&token=f53fa9c6-7629-471c-93eb-92b3f875f3e2'
                     link = 'https://gentle-valkyrie-331976.netlify.app/'
+                /> */}
+                <Project title='Restaurent CRUD App' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/2.JPG?alt=media&token=e77c5915-5ac0-408f-aec7-abc0d9cde83e'
+                    link = 'https://63df6eab6a21a83e200b1114--delightful-blini-dd9103.netlify.app/'
                 />
-                <Project title='Restaurent ERP' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/2.JPG?alt=media&token=e77c5915-5ac0-408f-aec7-abc0d9cde83e'
-                    link = 'https://classy-buttercream-e11ba7.netlify.app/'
-                />
-                <Project title='Expense Tracker App' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/3.JPG?alt=media&token=125550c2-1f14-4910-9227-55587dcee0a6'
-                    link = 'https://expense-tracker-final.surge.sh/'
-                />
-                <Project title='Netflix Clone' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/344.JPG?alt=media&token=ce8c049a-1b2b-40ba-bad0-78362e0b274c'
+                
+                {/* <Project title='Netflix Clone' imageUrl='https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/344.JPG?alt=media&token=ce8c049a-1b2b-40ba-bad0-78362e0b274c'
                     link = 'https://6388d7d9d11ed50bd3854f5d--exquisite-jelly-3f1c1f.netlify.app/'
-                />
+                /> */}
                 
             </motion.div>
         </div>
-            
-        
-        
-    
     </section>
   )
 }

@@ -41,18 +41,18 @@ const NavBar = ({selected,setSelected,isTopOfPage}) => {
             ):(
                 
                     <div >
-                        <IconButton  onClick = {() => setIsMenuToggled(!isMenuToggled)} 
-                        sx ={{backgroundColor: '#EF5350',color: "white",border: 'none'}}>
+                        {!isMenuToggled && <IconButton  onClick = {() => setIsMenuToggled(!isMenuToggled)} 
+                        sx ={{backgroundColor: '#EF5350',color: "white",border: 'none'}} >
                             <MenuOutlinedIcon/>
-                        </IconButton>
+                        </IconButton>}
                         {
                             !isAboveSmallScreen && isMenuToggled && (
-                                <div className = 'fixed right-0 bottom-0 h-full w-[300px] bg-sky-600 p-5 transition   delay-150 duration-500' >
+                                <div className = 'fixed right-0 bottom-0 h-full w-[300px] bg-sky-600 bg-opacity-70 p-5 transition   delay-150 duration-500' >
                                     <IconButton  onClick = {() => setIsMenuToggled(!isMenuToggled)} 
                                     sx ={{backgroundColor: '#EF5350',color: "white",border: 'none', }}>
                                         <CloseOutlinedIcon/>
                                     </IconButton>
-                                    <div className='flex mt-5 flex-col gap-10 ml-[33%] text-deep-blue text-2xl'>
+                                    <div className='flex mt-5 flex-col gap-10 ml-[33%] text-gray-400 text-2xl'>
                                         <Link page='Home' selected={selected} setSelected={setSelected}/>
                                         <Link page='Skills' selected={selected} setSelected={setSelected}/>
                                         <Link page='Projects' selected={selected} setSelected={setSelected}/>

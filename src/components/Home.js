@@ -15,7 +15,7 @@ const Home = ({setSelected}) => {
         2/5'>
             
            <img className = ' hover:cursor-pointer hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[400px]'
-            src = 'https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/bit-removebg-preview.png?alt=media&token=f32a71ee-3c17-420d-a4b5-ff25d9f37fca' / >
+            src = 'https://firebasestorage.googleapis.com/v0/b/restaurent-app-83b4c.appspot.com/o/bit-removebg-preview.png?alt=media&token=f32a71ee-3c17-420d-a4b5-ff25d9f37fca' />
              
         </div>
         <div  className='z-30 sm:basis-3/5 md:ml-20 mt-20 md:mt-32'>
@@ -33,7 +33,7 @@ const Home = ({setSelected}) => {
                     Gharis {' '}
                     <span className='xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[40px] before:-top-[120px] before:z-[-1]'>Qasim</span>
                 </p>
-                <p className='mt-20 mb-7 text-lg text-center md:text-start'>React JS Developer</p>
+                <p className='mt-20 mb-7 text-lg text-center md:text-start'>Front End UI/UX React Developer</p>
             </motion.div>
             <motion.div
                 className='flex mt-5 justify-center md:justify-start'
